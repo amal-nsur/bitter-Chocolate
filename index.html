@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bitter Chocolate</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<link href="style.css" rel="stylesheet">
+<link href="home.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ══ PRELOADER ══ -->
+<div id="preloader">
+  <div class="pre-bg"></div>
+  <div class="pre-text-wrap">
+    <div class="pre-title"><span class="word">Bitter</span></div>
+    <div class="pre-shimmer"></div>
+    <div class="pre-sub"><span class="word">Chocolate</span></div>
+    <div class="pre-tag">Artisan Confections</div>
+  </div>
+</div>
+
+<!-- Announcement Bar -->
+  <div id="announce">
+    ENJOY 20% OFF YOUR FIRST ORDER 
+  </div>
+
+<!-- ══ HEADER ══ -->
+<header id="header">
+  <a href="#" class="logo">
+    <div class="logo-emblem">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 4C10 10 6 18 16 28C26 18 22 10 16 4Z" stroke="#C89B5F" stroke-width="1.2" fill="none"/>
+        <line x1="16" y1="6" x2="16" y2="26" stroke="#C89B5F" stroke-width=".8"/>
+        <line x1="16" y1="12" x2="11" y2="17" stroke="#C89B5F" stroke-width=".6"/>
+        <line x1="16" y1="12" x2="21" y2="17" stroke="#C89B5F" stroke-width=".6"/>
+        <line x1="16" y1="18" x2="12" y2="22" stroke="#C89B5F" stroke-width=".6"/>
+        <line x1="16" y1="18" x2="20" y2="22" stroke="#C89B5F" stroke-width=".6"/>
+      </svg>
+    </div>
+    <div class="logo-name">
+      Bitter Chocolate
+      <span>Artisan Confections</span>
+    </div>
+  </a>
+
+  <nav>
+    <li class="nav-item active"><a href="index.html"> Home</a></li>
+    <li class="nav-item"><a href="#ingredients">Ingredients</a></li>
+    <li class="nav-item">
+      <a href="#chocolate">Chocolate</a>
+    </li>
+    <a href="#contact" class="nav-cta">Get in Touch</a>
+  </nav>
+
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-grid">
+
+    <!-- LEFT: two stacked images -->
+    <div class="hero-col-right">
+       <img src="hero.png" style="transform: scaleX(-1);" alt=""> 
+      <div class="img-ph">
+      </div>
+    </div>
+
+    <!-- CENTER -->
+    <div class="hero-col-center">
+
+      <!-- circular text -->
+      <div class="circ-text-wrap">
+        <svg viewBox="0 0 160 160">
+          <defs>
+            <path id="circ" d="M80,80 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/>
+          </defs>
+          <text><textPath href="#circ">Delicious chocolate candies · with top nuts and · </textPath></text>
+        </svg>
+      </div>
+
+      <!-- plant icon -->
+      <div class="hero-plant">
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="30" y1="52" x2="30" y2="18" stroke="#C89B5F" stroke-width="1.2"/>
+          <path d="M30 32C22 26 13 28 11 36C19 40 27 36 30 32Z" stroke="#C89B5F" stroke-width="1" fill="none"/>
+          <path d="M30 40C38 34 47 36 49 44C41 48 33 44 30 40Z" stroke="#C89B5F" stroke-width="1" fill="none"/>
+          <path d="M30 26C26 17 17 15 13 21C17 27 26 27 30 26Z" stroke="#C89B5F" stroke-width="1" fill="none"/>
+          <path d="M30 26C34 17 43 15 47 21C43 27 34 27 30 26Z" stroke="#C89B5F" stroke-width="1" fill="none"/>
+          <circle cx="30" cy="54" r="2" fill="#C89B5F" opacity=".4"/>
+        </svg>
+      </div>
+
+      <h1 class="hero-title">
+        Exclusive<br>Chocolate&nbsp;&amp;<br>Sweeties
+      </h1>
+
+      <a href="#chocolate" class="hero-btn">Learn More</a>
+    </div>
+
+    <!-- RIGHT: tall image -->
+    <div class="hero-col-right">
+       <img src="hero.png" alt=""> 
+      <div class="img-ph">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══════════════════ ABOUT ══════════════════ -->
+<section id="about">
+
+  <!-- scrolling bg text -->
+  <div class="about-marquee-bg" aria-hidden="true">
+    <div class="about-marquee-inner">
+      EXCLUSIVE CHOCOLATE &amp; TREATS &nbsp;&nbsp;&nbsp; EXCLUSIVE CHOCOLATE &amp; TREATS &nbsp;&nbsp;&nbsp;
+    </div>
+  </div>
+
+  <div class="about-inner">
+
+    <!-- LEFT: chocolate bar image -->
+    <div class="about-img reveal-left">
+      <img src="about-us.png" style="transform: scaleX(-1);" alt="Premium Chocolate Bar"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="about-img-ph">
+        <div class="about-ph-icon">🍫</div>
+        <div class="about-ph-label">aboutus.png</div>
+      </div>
+    </div>
+
+    <!-- RIGHT: text -->
+    <div class="about-text reveal-right">
+
+      <!-- eyebrow -->
+      <div class="about-eyebrow">
+        <div class="eyebrow-rule"></div>
+        <span>About Us</span>
+      </div>
+
+      <!-- big title -->
+      <h2 class="about-title">
+        Our Premium<br>Chocolate
+      </h2>
+
+      <!-- body copy -->
+      <p class="about-body">
+        It's your perfect destination to enjoy the finest homemade chocolate desserts,
+        crafted with healthy ingredients and premium quality. We offer exceptional Swiss
+        chocolate made from the finest cacao beans, carefully selected to deliver a rich
+        and luxurious taste experience.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ IMAGE STRIP ══════════════════ -->
+<section id="image-strip">
+  <div class="strip-bg-title">EXCLUSIVE CHOCOLATE &amp; TREATS</div>
+
+  <div class="strip-viewport">
+    <div class="strip-track" id="stripTrack">
+
+      <!-- Card 1 -->
+      <a href="shop.html?filter=mini" class="strip-card reveal">
+        <div class="strip-card-img">
+          <img src="Finest-Pralines.png" style="padding-top: 15%; padding-bottom: 15%;" alt="Finest Pralines"> 
+        </div>
+        <div class="strip-card-label">
+          <span class="strip-card-name">Finest Pralines</span>
+          <span class="strip-card-arrow"></span>
+        </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="shop.html?filter=mini" class="strip-card reveal" style="transition-delay:.1s">
+        <div class="strip-card-img">
+          <img src="pure-choco.jpg" alt="100% Chocolate">
+        </div>
+        <div class="strip-card-label">
+          <span class="strip-card-name">100% Chocolate</span>
+          <span class="strip-card-arrow"></span>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="shop.html?filter=big" class="strip-card reveal" style="transition-delay:.2s">
+        <div class="strip-card-img">
+          <img src="cake.png" alt="Chocolate Cakes"> 
+        </div>
+        <div class="strip-card-label">
+          <span class="strip-card-name">Chocolate Cakes</span>
+          <span class="strip-card-arrow"></span>
+        </div>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="shop.html?filter=mini" class="strip-card reveal" style="transition-delay:.3s">
+        <div class="strip-card-img">
+          <img src="Truffles.png" alt="Truffles Caramés"> 
+        </div>
+        <div class="strip-card-label">
+          <span class="strip-card-name">Truffles Caramés</span>
+          <span class="strip-card-arrow"></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- ══════════════════ WHY US ══════════════════ -->
+<section id="ingredients">
+<section id="whyus">
+  <div class="whyus-inner">
+    <div class="whyus-text reveal-left">
+      <div class="whyus-eyebrow">
+        <div class="whyus-eyebrow-rule"></div>
+        <span>Why Our Company</span>
+      </div>
+      <h2 class="whyus-title">Crafted With<br><em>Passion &amp; Purity</em></h2>
+      <ul class="whyus-points">
+        <li class="whyus-point"><div class="wp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#C89B5F" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div><div class="wp-body"><span class="wp-label">Ingredients</span><p class="wp-text">Made using premium ingredients, rich in flavor, and free from preservatives and alcohol.</p></div></li>
+        <li class="whyus-point"><div class="wp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#C89B5F" stroke-width="1.5" stroke-linecap="round"><path d="M12 21.7C5.4 15.5 2 10.9 2 7.5 2 4.4 4.7 2 8 2c1.8 0 3.5.9 4 2 .5-1.1 2.2-2 4-2 3.3 0 6 2.4 6 5.5 0 3.4-3.4 8-10 14.2z"/></svg></div><div class="wp-body"><span class="wp-label">Flavor</span><p class="wp-text">Delivers a rich and smooth chocolate taste, ensuring a pure and high-quality experience in every bite.</p></div></li>
+        <li class="whyus-point"><div class="wp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#C89B5F" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div><div class="wp-body"><span class="wp-label">Variety</span><p class="wp-text">A diverse selection of chocolates and desserts designed for everyday enjoyment and special occasions, with personalization options available.</p></div></li>
+      </ul>
+    </div>
+    <div class="whyus-img reveal-right">
+      <div class="whyus-corner tl"></div>
+      <div class="whyus-corner br"></div>
+      <img id="thewhyus" src="whyus.png" alt="Premium Chocolate" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="whyus-img-ph">
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- ══════════════════ PRODUCTS ══════════════════ -->
+<section id="chocolate">
+
+  <!-- corner chocolate splash images -->
+  <div class="prod-corner tl" 
+     style="animation: floatLeft 4s ease-in-out infinite;">
+    <img src="topimg.png" alt=""
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="prod-corner-ph" style="display:none">🍫</div>
+  </div>
+  <div class="prod-corner tr" 
+     style="animation: floatRight 4s ease-in-out infinite;">
+    <img src="topimg.png" alt="" 
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="prod-corner-ph" style="display:none">🍫</div>
+  </div>
+
+  <!-- header -->
+  <div class="prod-header reveal">
+    <div class="prod-eyebrow">
+      <div class="prod-eyebrow-rule"></div>
+      <span>Our Magic</span>
+      <div class="prod-eyebrow-rule"></div>
+    </div>
+    <h2 class="prod-title" >Explore Our Chocolate</h2>
+  </div>
+
+  <!-- carousel -->
+  <div class="prod-carousel">
+    <button class="prod-arrow prev" id="prodPrev" aria-label="Previous">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+
+    <div class="prod-track-wrap">
+      <div class="prod-track" id="prodTrack">
+            <!-- 1 -->
+            <div class="prod-card">
+            <div class="prod-card-img">
+                <img src="cookie.png" alt="Caramel Bite" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            </div>
+            <div class="prod-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" class="empty"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <div class="prod-name">Chocolate Cookies </div><div class="prod-price">$9.49</div>
+            </div>
+
+            <!-- 2 -->
+            <div class="prod-card">
+            <div class="prod-card-img">
+                <img src="cupcake.png" alt="Caramel Bite" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            </div>
+            <div class="prod-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <div class="prod-name">Chocolate Cupcakes</div><div class="prod-price">$8.99</div>
+            </div>
+
+            <!-- 3 -->
+            <div class="prod-card">
+            <div class="prod-card-img">
+                <img src="esp-ball.png" alt="Caramel Bite" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            </div>
+            <div class="prod-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" class="empty"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <div class="prod-name">Espresso Truffle Ball</div><div class="prod-price">$14.49</div>
+            </div>
+
+            <!-- 4 -->
+            <div class="prod-card">
+            <div class="prod-card-img">
+                <img src="muffin.png" alt="Caramel Bite" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            </div>
+            <div class="prod-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <div class="prod-name">Chocolate Muffins </div><div class="prod-price">$16.99</div>
+            </div>
+
+            <!-- 5 -->
+            <div class="prod-card">
+            <div class="prod-card-img">
+                <img src="jar.png" alt="Caramel Bite" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            </div>
+            <div class="prod-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" class="empty"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <div class="prod-name">Bitter Ganache</div><div class="prod-price">$13.99</div>
+            </div>
+
+            <!-- 6 -->
+            <div class="prod-card">
+            <div class="prod-card-img">
+                <img src="loz.png" alt="Caramel Bite" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            </div>
+            <div class="prod-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <div class="prod-name">Almond Cluster</div><div class="prod-price">$10.99</div>
+            </div>
+
+            <!-- 7 -->
+            <div class="prod-card">
+            <div class="prod-card-img">
+                <img src="brownii.png" alt="Caramel Bite" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            </div>
+            <div class="prod-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" class="empty"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <div class="prod-name">Fudge Brownie</div><div class="prod-price">$15.99</div>
+            </div>
+
+            <!-- 8 -->
+            <div class="prod-card">
+            <div class="prod-card-img">
+                <img src="rasp.png" alt="Caramel Bite" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            </div>
+            <div class="prod-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <div class="prod-name">Raspberry Bonbon</div><div class="prod-price">$12.49</div>
+            </div>
+
+            <!-- 9 -->
+            <div class="prod-card">
+            <div class="prod-card-img">
+                <img src="Truffles.png" style="max-height: 300px;" alt="Chocolate Truffle" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            </div>
+            <div class="prod-stars">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" class="empty"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="prod-name">Chocolate Truffle</div>
+            <div class="prod-price">$9.99</div>
+            </div>
+
+            <!-- 10 -->
+            <div class="prod-card">
+            <div class="prod-card-img">
+                <img src="Finest-Pralines.png"  alt="Dark Praline" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            </div>
+            <div class="prod-stars">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="prod-name">Dark Praline</div>
+            <div class="prod-price">$7.99</div>
+            </div>
+
+            <!-- 11 -->
+            <div class="prod-card">
+            <div class="prod-card-img">
+                <img src="Hazel-Bark.jpg" alt="Hazelnut Bark" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            </div>
+            <div class="prod-stars">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" class="empty"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="prod-name">Hazelnut Bark</div>
+            <div class="prod-price">$11.49</div>
+            </div>
+
+            <!-- 12 -->
+            <div class="prod-card">
+            <div class="prod-card-img">
+                <img src="caramel-bits.png" alt="Caramel Bite" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            </div>
+            <div class="prod-stars">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="prod-name">Caramel Bite</div>
+            <div class="prod-price">$8.49</div>
+            </div>
+
+      </div><!-- end track -->
+    </div><!-- end track-wrap -->
+
+    <button class="prod-arrow next" id="prodNext" aria-label="Next">
+      <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </div><!-- end carousel -->
+
+  <!-- dots -->
+  <div class="prod-dots" id="prodDots"></div>
+
+  <!-- view all -->
+  <div class="prod-cta-wrap reveal">
+    <a href="shop.html" class="prod-cta">View All Products</a>
+  </div>
+
+</section>
+
+<!-- ══════════════════ FAQ ══════════════════ -->
+<section id="faq">
+  <div class="faq-inner">
+
+    <!-- LEFT: sticky title -->
+    <div class="faq-heading reveal-left">
+      <div class="faq-eyebrow">
+        <div class="faq-eyebrow-rule"></div>
+        <span>Common Questions</span>
+      </div>
+      <h2 class="faq-title">
+        Got a<br><em>Question?</em>
+      </h2>
+      <p class="faq-subtitle">
+        Everything you need to know about our chocolate, orders, and services.
+      </p>
+      <div class="faq-bracket">
+        <div class="faq-bracket-line"></div>
+        <div class="faq-bracket-line"></div>
+        <div class="faq-bracket-line"></div>
+        <div class="faq-bracket-line"></div>
+        <div class="faq-bracket-line"></div>
+      </div>
+    </div>
+
+    <!-- RIGHT: accordion — all questions flat, no categories -->
+    <div class="faq-list reveal-right">
+
+      <div class="faq-item">
+        <button class="faq-q"><span class="faq-q-text">Can I customize my order?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><p class="faq-a-text">Yes, personalized options are available for selected products and events.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span class="faq-q-text">How can I place an order?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><p class="faq-a-text">Orders can be placed directly through the website or by contacting us for custom requests.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span class="faq-q-text">Do you offer gift packaging?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><p class="faq-a-text">Yes, gift packaging options are available for selected products.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span class="faq-q-text">Are your products handmade?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><p class="faq-a-text">Yes, all products are handmade using premium ingredients.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span class="faq-q-text">Do your products contain preservatives or alcohol?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><p class="faq-a-text">No, our products are completely free from preservatives and alcohol.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span class="faq-q-text">Do you offer delivery services?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><p class="faq-a-text">Delivery availability depends on location and order size.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span class="faq-q-text">How should chocolate products be stored?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><p class="faq-a-text">Store in a cool, dry place away from direct sunlight for best quality and taste.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span class="faq-q-text">Do you prepare desserts for events and parties?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+        <div class="faq-a"><p class="faq-a-text">Yes, customized dessert selections and gift options are available for events and special occasions.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ CONTACT ══════════════════ -->
+<section id="contact">
+  <div class="contact-inner">
+
+    <!-- LEFT: info -->
+    <div class="contact-info reveal-left">
+      <div class="contact-eyebrow">
+        <div class="contact-eyebrow-rule"></div>
+        <span>Get in Touch</span>
+      </div>
+      <h2 class="contact-title">Let's<br><em>Talk Chocolate</em></h2>
+      <p class="contact-desc">
+        Have a question, a custom order, or just want to say hello?
+        We'd love to hear from you — reach out any way you prefer.
+      </p>
+
+      <div class="contact-socials-label">Find us on</div>
+      <div class="contact-socials">
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/YOURNUMBER" class="social-link" target="_blank" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:hello@bitterchocolate.com" class="social-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+
+        <!-- Telegram -->
+        <a href="https://t.me/YOURUSERNAME" class="social-link" target="_blank" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/YOURHANDLE" class="social-link" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- RIGHT: form -->
+    <div class="contact-form reveal-right">
+
+      <!-- reason chips -->
+      <div>
+        <div class="reason-label">I'm reaching out about</div>
+        <div class="reason-chips" id="reasonChips">
+          <button type="button" class="reason-chip" data-reason="General Inquiry">General Inquiry</button>
+          <button type="button" class="reason-chip" data-reason="Custom Order">Custom Order</button>
+          <button type="button" class="reason-chip" data-reason="Event & Catering">Event &amp; Catering</button>
+          <button type="button" class="reason-chip" data-reason="Delivery Question">Delivery Question</button>
+          <button type="button" class="reason-chip" data-reason="Product Information">Product Information</button>
+          <button type="button" class="reason-chip" data-reason="Collaboration">Collaboration</button>
+          <button type="button" class="reason-chip" data-reason="Facing a Problem">Facing a Problem</button>
+          <button type="button" class="reason-chip" data-reason="Other" id="chipOther">Other</button>
+        </div>
+        <div class="other-expand" id="otherExpand">
+          <input type="text" class="cf-other-input" id="otherInput" placeholder="Please describe your reason…">
+        </div>
+      </div>
+
+      <!-- name + phone -->
+      <div class="cf-row">
+        <div class="cf-group">
+          <label class="cf-label" for="cfName">Full Name</label>
+          <input type="text" id="cfName" class="cf-input" placeholder="Your full name">
+        </div>
+        <div class="cf-group">
+          <label class="cf-label" for="cfPhone">Phone Number</label>
+          <input type="tel" id="cfPhone" class="cf-input" placeholder="+1 000 000 0000">
+        </div>
+      </div>
+
+      <!-- message -->
+      <div class="cf-group">
+        <label class="cf-label" for="cfMessage">Message</label>
+        <textarea id="cfMessage" class="cf-textarea" placeholder="Write your message here…"></textarea>
+      </div>
+
+      <!-- submit -->
+      <button type="button" class="cf-submit"><span>Send Message</span></button>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-col">
+    <div class="footer-col-title">Bitter Chocolate</div>
+    <p>Handcrafted artisan confections since 2010. Made with the finest ingredients, free from preservatives and alcohol.</p>
+  </div>
+  <div class="footer-col">
+    <div class="footer-col-title">Navigate</div>
+    <a href="index.html#about">About Us</a>
+    <a href="index.html#ingredients">Ingredients</a>
+    <a href="shop.html">Shop</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+  <div class="footer-col">
+    <div class="footer-col-title">Get In Touch</div>
+    <p>WhatsApp & Telegram available</p>
+    <p>@bitterchocolate</p>
+    <a href="index.html#contact">Send a message →</a>
+  </div>
+</footer>
+
+
+<div class="footer-bottom">
+  <span>© 2026 Bitter Chocolate · Artisan Confections</span>
+  <span>Handcrafted with love · since 2008 </span>
+</div>
+
+
+
+<script src="script.js" defer></script>
+<script src="home.js"   defer></script>
+
+
+
+<a href="cart.html" class="cart-float" id="cartFloat">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+  </svg>
+  <span class="cart-count" id="cartCount">0</span>
+</a>
+</body>
+</html>
